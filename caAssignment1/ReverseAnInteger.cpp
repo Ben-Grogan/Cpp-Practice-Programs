@@ -4,6 +4,16 @@ using namespace std;
 int reverseDigits(int num){
     int rev = 0;
 
+    /*
+    
+    this algorithm uses the modulo operator to find the last
+    digit of an integer, adds this to the reverse integer,
+    divides the original integer by 10, and repeats until the
+    whole integer is reversed. if theres a negative number, it
+    makes it positive, does the calculation, then makes it negative
+    again.
+    
+    */
     while(num>0){
         rev = rev*10+num%10;
         num=num/10;

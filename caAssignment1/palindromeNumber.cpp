@@ -4,6 +4,13 @@ using namespace std;
 
 bool checkPalindrome(int num){
     
+    /*
+    this algorithm reverses an integer, the compares
+    it to the original to determine if it is a palindrome.
+
+    if the original is a negative number it returns false
+    as the - sign makes it impossible to be a palindrome.
+    */
     if(num<0){
         return false;
     }

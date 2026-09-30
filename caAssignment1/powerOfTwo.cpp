@@ -3,6 +3,15 @@ using namespace std;
 
 
 bool powerOfTwo(int num){
+
+/*
+this ones super simple, the algorithm just divides the 
+input by 2 until the remainder is not 0, as this would
+mean it's not divisible by two. if the input reaches 1
+then it is a power of 2.
+
+*/
+
     if (num <= 0){
         return false;
     }
