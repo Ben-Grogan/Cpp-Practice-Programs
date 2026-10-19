@@ -2,46 +2,6 @@
 using namespace std;
 
 
-
-char* copy (char* dest, const char* src){
-
-    if (length(dest) < length(src)){
-        return NULL;
-    }
-
-    int i = 0;
-
-    while (src[i] != '\0'){
-        dest[i] = src[i];
-        i++;
-    }
-
-    dest[i] = '\0';
-
-}
-
-void copy_test_case_1(){
-
-}
-
-//empty string
-void copy_test_case_2(){
-
-}
-
-//string with spaces
-void copy_test_case_3(){
-
-}
-
-//single character
-void copy_test_case_4(){
-
-}
-
-
-
-
 /*
 This function takes in a character array to act as a string. it then
 calls the length function with said array which initialises an int variable "count".
@@ -106,17 +66,6 @@ int main(){
 
     cout << length(str) << endl;
 
-    char dest[20] = "aaaaaaaaaaaaaaaaaaa";
-
-    if (copy(dest, "hello") != NULL) {
-        cout << dest << endl;
-    }
-    else{
-        cout << "Not Enough Space" << endl;
-    }
-
-
-    
     
     return 0;
 
